@@ -1,0 +1,20 @@
+<!--pages/loadmore/loadmore.wxml-->
+<view style='height:100%'>
+  <text class="text-center title">上拉加载更多Demo</text>
+  <scroll-view style='height:100%;' scroll-y="true" bindscrolltolower="bindscrolltolow">
+    <view class='comment-container'>
+      <view class='comment-block' wx:for="{{listData}}" wx:for-item="item" wx:key="item.id">
+        <image class='comment-avatar' src='{{item.imgUrl}}' mode='scaleToFill'></image>
+        <view>
+          {{item.desc}}
+        </view>
+        <!-- <view class='divider'></view> -->
+      </view>
+      <view class="weui-loadmore" hidden="{{!isHideLoadMore}}">
+        <view class="weui-loading"></view>
+        <view class="weui-loadmore__tips">正在加载</view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>
