@@ -1,0 +1,13 @@
+<button bindtap="showModal">显示</button>
+<view class='mask-layer' wx:if="{{showPop}}" bindtap='hideModal'></view>
+<view class='pop-add-cart pop-common' wx:if="{{showPop}}" animation='{{animationData}}'>
+  <view class='header row'>
+    头部区域
+  </view>
+  <scroll-view class='body' scroll-y='true'>
+    中间区域
+  </scroll-view>
+  <view class='footer toolbar'>
+    底部区域
+  </view>
+</view>

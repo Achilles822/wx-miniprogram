@@ -1,0 +1,40 @@
+/* pages/tips/components/tips.wxss */
+.tips {
+  /* display: none; */
+  width: 370rpx;
+  font-size: 25rpx;
+  height: 100rpx;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+  position: fixed;
+  right:30rpx;
+  top:15rpx;
+  /* margin: 120rpx auto 0 35rpx; */
+  background-color: white;
+  /* border: 1px solid gainsboro; */
+  border-radius: 5px;
+  box-shadow:0px 1px 6px 0px #ccc;
+}
+.tips:after {
+  content: '';
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  top: -11rpx;
+  right: 108rpx;
+  transform: rotate(45deg);
+  background-color: white;
+  border: 1px white;
+  border-style: solid none none solid ;
+}
+.tips-container{
+  display: flex;
+  flex-direction: row;
+}
+.tips-text{
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+.tips-btn__close{
+  height:30rpx;width:30rpx;margin-top:15rpx;margin-right:8rpx;
+}

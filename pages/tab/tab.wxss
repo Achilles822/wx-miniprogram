@@ -1,1 +1,22 @@
 /* pages/tab/tab.wxss */
+
+page {
+  margin: 0;
+}
+
+.nav-left {
+  display: inline-block;
+  width: 25%;
+  height: 100vh;
+  background-color: yellow;
+}
+
+.nav-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: royalblue;
+  margin: 0;
+}

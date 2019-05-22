@@ -1,2 +1,6 @@
-<!--pages/tab/tab.wxml-->
-<text>pages/tab/tab.wxml</text>
+<!-- tab菜单 -->
+<view class='main-container'>
+  <view class='nav-left'>
+  </view>
+  <view class='nav-right'></view>
+</view>

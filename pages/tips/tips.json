@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tips":"/pages/tips/components/tips"
+  }
+}

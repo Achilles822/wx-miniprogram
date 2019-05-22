@@ -1,0 +1,14 @@
+<!--pages/tips/components/tips.wxml-->
+<view class='tips'>
+    <view class='tips-container'>
+    <view class='tips-text'>
+    
+      <text>点击</text>
+      <image style='width:30rpx;height:30rpx;vertical-align:middle' src='../../../images/tips/icon_more.jpg'></image>
+      <text>添加到我的小程序，微信首页下拉即可快速访问店铺</text>
+    </view>
+    <view>
+    <image class='tips-btn__close' src='../../../images/tips/icon_close.jpg'></image>
+    </view>
+    </view>
+</view>
