@@ -1,0 +1,31 @@
+<view class='container'>
+	<swiper
+		style='width: {{width}}; height: {{height}};'
+		autoplay='{{autoplay}}'
+		interval='{{interval}}'
+		duration='{{duration}}'
+		circular='{{circular}}'
+		previous-margin='{{previousMargin}}'
+		next-margin='{{nextMargin}}'
+		bind:change='change'>
+		<block wx:for='{{sliders}}' wx:key='index'>
+			<swiper-item>
+				<image
+					mode='aspectFill'
+					class='img {{current == index ? "active" : "static"}}'
+					src='{{item.imgUrl}}' />
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class='dots'>
+		<block wx:for='{{sliders}}' wx:key='index'>
+			<view class='dot {{current == index ? "dot-active" : ""}}'></view>
+		</block>
+	</view>
+	<view class='theme' style='margin-left: {{previousMargin}};'>
+		<block wx:for='{{sliders}}' wx:key='index'>
+			<view hidden='{{current != index}}' class='title'>{{item.title}}</view>
+			<view hidden='{{current != index}}' class='subtitle'>{{item.subtitle}}</view>
+		</block>
+	</view>
+</view>

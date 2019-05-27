@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -58,6 +58,20 @@
 					"id": -1,
 					"name": "购物车",
 					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "卡片滑动",
+					"pathName": "pages/cards/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "浮动按钮",
+					"pathName": "pages/popup-button-demo/popup-button-demo",
 					"scene": null
 				}
 			]

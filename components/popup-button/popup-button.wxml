@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="btn-group">
+        <view>
+            <button class="btn btn-open" bindtap="rotate" animation="{{animation}}" hover-class="none">
+                <image class="icon" mode="widthFix" src="{{icon.add}}"></image>
+            </button>
+        </view>
+        <button bindtap="{{item.tap}}" wx:for="{{items}}" wx:key="{{index}}" wx:if="{{show}}" class="btn" animation="{{item.animation}}" hover-class="none">
+            <image class="icon" mode="widthFix" src="{{item.icon}}"></image>
+        </button>
+        <!-- <button wx:if="{{show}}" class="btn" animation="{{btnCenterAnimation}}" hover-class="none">
+            <image class="icon" mode="widthFix" src="{{icon.location}}"></image>
+        </button>
+        <button wx:if="{{show}}" class="btn" animation="{{btnBottomAnimation}}" hover-class="none">
+            <image class="icon" mode="widthFix" src="{{icon.chat}}"></image>
+        </button> -->
+    </view>
+</view>

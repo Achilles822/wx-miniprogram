@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "popup-button":"../../components/popup-button/popup-button"
+  }
+}

@@ -1,0 +1,54 @@
+.img {
+	border-radius: 10rpx;
+	box-shadow: 4rpx 4rpx 16rpx rgba(0, 0, 0, 0.08);
+	height: 95%;
+	width: 100%;
+}
+
+.active {
+	transform: none;
+	transition: all 0.5s ease 0s;
+}
+
+.static {
+	transform: scale(0.9, 0.76);
+	transition: all 0.5s ease 0s;
+}
+
+.dots {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.dot {
+	background-color: #fff;
+	border-radius: 50%;
+	bottom: 44rpx;
+	height: 12rpx;
+	margin: 0 6rpx;
+	position: relative;
+	width: 12rpx;
+}
+
+.dot-active {
+	background-color: #fa541c;
+	border-radius: 12rpx;
+	width: 24rpx;
+}
+
+.theme {
+	box-sizing: border-box;
+	width: 750rpx;
+}
+
+.title {
+	font-size: 28rpx;
+	font-weight: bold;
+}
+
+.subtitle {
+	color: #8c8c8c;
+	font-size: 20rpx;
+}
