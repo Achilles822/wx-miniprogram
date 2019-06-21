@@ -1,0 +1,6 @@
+<view wx:for="{{orders}}" wx:key="index">
+    <view wx:if="{{item.type=='red'}}" class="shape red">红背景</view>
+    <view wx:if="{{item.type=='green'}}" class="shape green">绿背景</view>
+    <view wx:if="{{item.type=='blue'}}" class="shape blue">蓝背景</view>
+</view>
+<button bindtap="random">random</button>

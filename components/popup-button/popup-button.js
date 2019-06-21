@@ -39,41 +39,13 @@ Component({
   },
   methods: {
     location() {
-      wx.navigateTo({
-        url: "/pages/near-shop/near-shop"
-      });
+      console.log('you click location')
     },
     search() {
-      wx.navigateTo({
-        url: "/pages/search/search"
-      });
+      console.log('you click search')
     },
     chat() {
-      app.tokenCheck(() => {
-        app.MainApi.userService({
-          data: {
-            token: app.LM.token,
-            productId: ""
-          },
-          other: {
-            isShowLoad: true
-          }
-        }).then(res => {
-          console.log(res);
-          // debugger
-          if (res.code == 0) {
-            const data = res.data || {};
-            wx.navigateTo({
-              url: `/pages/wap/wap?url=${data.serviceUrl || ""}`
-            });
-          } else if (res.message === "还没有关注导购") {
-            // debugger
-            wx.navigateTo({
-              url: "/pages/shopping-guide/shopping-guide?redirect=1"
-            });
-          }
-        });
-      });
+      console.log('you click chat')
     },
     rotate: function() {
       this.expend = !this.expend;

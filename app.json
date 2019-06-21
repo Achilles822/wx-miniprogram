@@ -6,7 +6,8 @@
     "pages/tips/tips",
     "pages/cart/cart",
     "pages/cards/index",
-    "pages/popup-button-demo/popup-button-demo"
+    "pages/popup-button-demo/popup-button-demo",
+    "pages/view_order/view_order"
   ],
   "window": {
     "backgroundTextStyle": "light",
