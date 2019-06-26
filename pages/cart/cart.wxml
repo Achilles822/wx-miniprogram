@@ -1,13 +1,12 @@
-<button bindtap="showModal">显示</button>
+<button bindtap="showModal">显示底部滑入动画</button>
+<view class="btn-add-cart before-position" bindtap="addCart">加入购物车动画</view>
+<view wx:if="{{ballDisplay}}" class="ball" style="top:{{top}};left:{{left}}" animation='{{ballAnimationData}}'></view>
 <view class='mask-layer' wx:if="{{showPop}}" bindtap='hideModal'></view>
 <view class='pop-add-cart pop-common' wx:if="{{showPop}}" animation='{{animationData}}'>
-  <view class='header row'>
-    头部区域
-  </view>
-  <scroll-view class='body' scroll-y='true'>
-    中间区域
-  </scroll-view>
-  <view class='footer toolbar'>
-    底部区域
-  </view>
+  <view class='header row'>头部区域</view>
+  <scroll-view class='body' scroll-y='true'>中间区域</scroll-view>
+  <view class='footer toolbar'>底部区域</view>
+</view>
+<view class="bottom-bar" hover-class="none" hover-stop-propagation="false">
+  <image id="icon" class="icon after-position" src="../../images/cart/cart.png" mode="widthFix"></image>
 </view>

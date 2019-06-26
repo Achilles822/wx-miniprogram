@@ -10,6 +10,7 @@
   z-index: 1000;
   color: #fff;
 }
+
 .pop-common {
   width: 100%;
   overflow: hidden;
@@ -18,4 +19,39 @@
   left: 0;
   z-index: 2000;
   background: #fff;
+}
+
+.btn-add-cart {
+  width: 300rpx;
+  height: 50rpx;
+  position: relative;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100rpx;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end
+}
+.icon{
+  height:64rpx;
+  width:64rpx;
+  padding:10rpx;
+  margin-right:30rpx;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+.ball{
+  position: absolute;
+  width:30rpx;
+  height:30rpx;
+  background-color: red;
+  border-radius: 50%;
+  z-index:999;
+  transition: 1s top cubic-bezier(0.47, 0, 0.745, 0.715), 1s left cubic-bezier(0, 0, 0, 0);
 }
